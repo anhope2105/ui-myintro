@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Home from './components/Home/Home'
+import Navigation from "./components/Navigation/Navigation"
+import Summery from "./components/Summery/Summery"
+import Language from "./components/Language/Language"
+import Process from "./components/Process/Process"
+import Projects from "./components/Projects/Projects"
+import Carrer from "./components/Carrer/Carrer"
+import About from "./components/About/About"
+import Contact from "./components/Contact/Contact"
+import Footer from "./components/Footer/Footer"
+import Theme from "./components/Theme/Theme"
+import Progress from "./components/Progress/Progress"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <Theme />
+    <Progress />
+    <div className="container">
+      <Navigation />
+      <Home />
+      <Summery />
+      <Language />
+      <Process />
+      <Projects />
+      <Carrer />
+      <About />
+      <Contact />
+      <Footer />
     </div>
-  );
+    </>
+  )
 }
 
-export default App;
+export default App

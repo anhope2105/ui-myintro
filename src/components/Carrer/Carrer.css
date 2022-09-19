@@ -1,0 +1,74 @@
+.carrer-education {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.carrer-education::before{
+    content:'';
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 100%;
+    background-color: var(--grayColor);
+}
+.carrer h3 {
+    font-size: 3.1rem;
+    letter-spacing: 1px;
+    margin-bottom:10px;
+}
+.c-box {
+    display: flex;
+    flex-direction: column;
+    margin-top:20px;
+    letter-spacing: 1px;
+    width:100%;
+}
+.c-box h4 {
+    text-transform: uppercase;
+    font-size:1.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-left:3px solid var(--blueColor);
+    padding-left:10px;
+    line-height: 1.3rem;
+}
+.c-box strong {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    font-weight: 500;
+    margin-top:3px;
+}
+.c-box span {
+    padding-left: 10px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-top:6px;
+    color: var(--grayColor);
+}
+.btn-c {
+    text-align: center;
+    margin-top: 50px;
+}
+@media (max-width:590px){
+    .carrer-education {
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    .carrer-education::before{
+        display: none;
+    }
+    .carrer {
+        width:100%;
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+    }
+    .edu  {
+        margin-top:50px
+    }
+}

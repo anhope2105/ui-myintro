@@ -1,0 +1,35 @@
+#footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    gap:20px;
+}
+#footer span {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color:var(--grayColor);
+    font-size: 0.9rem;
+}
+footer i {
+    color:var(--whiteColor);
+    margin:0 15px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+footer i:hover {
+    box-shadow: 0 0 10px var(--whiteColor);
+}
+footer .footer-logo{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+@media (max-width:650px) {
+    footer {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}

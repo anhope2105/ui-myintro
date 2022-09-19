@@ -1,0 +1,25 @@
+#progress {
+    width:55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    position: fixed;
+    right:25px;
+    bottom:25px;
+    z-index: 999;
+    cursor:pointer;
+    box-shadow: 0 0 10px 0 var(--whiteColor);
+}
+#progress div {
+    width: calc(100% - 5px);
+    height: calc(100% - 5px);
+    background-color: #111;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white
+}
